@@ -1,0 +1,698 @@
+:root {
+    --pink-color: rgba(196, 47, 129, 0.752);
+    --light-gray-color: rgba(219, 218, 218, 0.772);
+    --dark-navy-color: rgb(3, 3, 23);
+    --gray-color: gray;
+    --p-font-size: 12px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.c-pink {
+    color: var(--pink-color);
+}
+
+/* Start styling header */
+header {
+    width: 100%;
+    background-color: var(--dark-navy-color);
+    color: var(--light-gray-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+    margin-left: 10%;
+    color: white;
+}
+
+header nav {
+    overflow: hidden;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+header nav a {
+    padding: 0 15px;
+    color: var(--light-gray-color);
+    text-decoration: none;
+    font-size: var(--p-font-size);
+}
+
+header nav a:hover {
+    color: var(--pink-color);
+}
+
+/* End header style */
+
+/* Start hero style */
+.features {
+    width: 100%;
+    background-image: url("../images/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.485);
+    padding: 5% 10%;
+}
+
+.hero .overlay .right {
+    max-width: 300px;
+    float: right;
+    margin-right: 1%;
+    border-radius: 5px 5px;
+}
+
+.right h3 {
+    text-align: center;
+    background-color: var(--light-gray-color);
+    padding: 20px 30px;
+    border-radius: 5px 5px 0 0;
+}
+
+.right form {
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+}
+
+.right input {
+    font-size: var(--p-font-size);
+    background-color: white;
+    border: 0;
+    width: 85%;
+    padding: 10px;
+    border-bottom: 1px lightgray solid;
+    margin: 5%;
+}
+
+p {
+    font-size: var(--p-font-size);
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 1px var(--pink-color) solid;
+}
+
+.right button {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: var(--pink-color);
+    height: 50px;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 2%;
+}
+
+.hero .overlay .left {
+    width: 40%;
+    display: inline-block;
+    color: white;
+}
+
+.left h1 {
+    font-size: 50px;
+}
+
+.left hr {
+    border: 2px solid white;
+    width: 50px;
+    margin: 10px 0;
+}
+
+.left p {
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.left .s-cap {
+    color: rgb(214, 212, 212);
+    font-size: var(--p-font-size);
+}
+
+button {
+    transition: 0.5s all;
+    border-radius: 3px;
+}
+
+.left button {
+    font-size: 16px;
+    background: transparent;
+    border: 1px white solid;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 20px;
+}
+
+.left button:hover {
+    background-color: white;
+    color: var(--dark-navy-color);
+}
+
+.hero .right button:hover {
+    background-color: var(--dark-navy-color);
+}
+
+/* End hero style */
+
+/* Start social style */
+.social {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: white;
+}
+
+.social .text {
+    float: left;
+    font-size: var(--p-font-size);
+    width: 35%;
+}
+
+.social .text p {
+    padding: 5px 0;
+    color: var(--gray-color);
+}
+
+.social .icons {
+    float: right;
+    margin-top: 5px;
+}
+
+.social .icons i {
+    font-size: 35px;
+    padding: 0 10px;
+    color: lightgray;
+}
+
+.social .icons i:hover {
+    color: var(--pink-color);
+}
+
+/* End social style */
+
+/* Start tabs style */
+section {
+    width: 100%;
+    padding: 5% 10%;
+    background-color: var(--light-gray-color);
+    overflow: hidden;
+}
+
+.tabs .t-left {
+    float: left;
+    width: 20%;
+}
+
+.t-left button {
+    padding: 35px 25px;
+    font-size: 18px;
+    background-color: var(--pink-color);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2%;
+    display: block;
+}
+
+.t-left button:hover {
+    background-color: var(--dark-navy-color);
+}
+
+.t-center {
+    float: left;
+    width: 40%;
+    font-size: var(--p-font-size);
+}
+
+.t-center p {
+    padding: 25px 0;
+    color: var(--gray-color);
+}
+
+.t-center button {
+    padding: 10px 20px;
+    background-color: var(--pink-color);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+.t-center button:hover {
+    background-color: var(--dark-navy-color);
+}
+
+.t-right {
+    float: right;
+}
+
+/* Styling sub list */
+.sup {
+    background-color: white;
+}
+
+.sup-left {
+    width: 40%;
+    float: left;
+    margin-top: 65px;
+    box-shadow: 10px 10px 10px var(--light-gray-color);
+    margin-left: 10px;
+}
+
+.sup-left img {
+    width: 100%;
+}
+
+.sup-right {
+    width: 50%;
+    padding: 20px;
+    float: right;
+    font-size: var(--p-font-size);
+    margin-left: 20px;
+}
+
+
+.sup-right hr, .sup2-left hr {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.sup-right h2 {
+    padding: 10px 0;
+}
+
+.sup-right>p {
+    padding: 10px 0;
+    color: var(--gray-color);
+}
+
+article h4 {
+    display: inline-block;
+}
+
+article i {
+    border: 2px var(--pink-color) solid;
+    border-radius: 50%;
+    color: var(--pink-color);
+    padding: 7px;
+    margin-right: 30px;
+    font-size: var(--p-font-size);
+}
+
+article p {
+    margin-left: 70px;
+    color: var(--gray-color);
+    padding: 10px 0;
+}
+
+/* Styling sup2 */
+.sup2 {
+    background-color: var(--light-gray-color);
+}
+
+.sup2-left {
+    width: 40%;
+    float: left;
+    font-size: var(--p-font-size);
+}
+
+.sup2-left h2 {
+    padding: 10px;
+}
+
+.sup2-left hr {
+    margin: 10px 10px;
+}
+
+.sup2-left p {
+    color: var(--gray-color);
+    padding: 10px;
+}
+
+.sup2-right {
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+}
+
+.sup2-right img {
+    width: 100%;
+}
+
+/* End sup2 */
+
+/* Start why section */
+.why-sec {
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.why-sec .upper {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.why-sec .upper h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular";
+    font-size: 26px;
+    padding: 10px 0;
+}
+
+.why-sec .upper p {
+    padding: 10px 0;
+}
+
+.why-sec .lower {
+    text-align: center;
+}
+
+.why-sec .txt {
+    padding: 5px 10px;
+    width: 30%;
+    display: inline-block;
+}
+
+.why-sec .lower h2 {
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.why-sec .lower i {
+    margin-top: 30px;
+    border: 2px var(--pink-color) solid;
+    border-radius: 50%;
+    color: var(--pink-color);
+    padding: 15px;
+    font-size: 18px;
+}
+
+.why-sec p {
+    color: var(--gray-color);
+    font-size: var(--p-font-size);
+}
+
+/* End style why */
+
+/* Style pricing */
+.price {
+    text-align: center;
+    background-color: var(--light-gray-color);
+}
+
+.price h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular";
+    font-size: 26px;
+    padding: 10px 0;
+}
+
+
+.price>p {
+    color: var(--gray-color);
+}
+
+.price .cards {
+    width: 100%;
+    display: inline-block;
+}
+
+.cards li {
+    list-style: none;
+}
+
+.card {
+    padding-top: 30px;
+    display: inline-block;
+    margin: 1%;
+    width: 31%;
+}
+
+.card h3 {
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: #333333;
+    padding: 20px 0;
+}
+
+.card .up .price-details {
+    padding: 40px 10px;
+    background-color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.card .up .price-details p {
+    font-style: italic;
+    padding-top: 10px;
+    color: lightgray;
+}
+
+.up .val {
+    font-size: 50px;
+    padding: 2px;
+    color: white;
+}
+
+.dollar {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.card .low {
+    border-top: 5px solid var(--pink-color);
+    background-color: white;
+}
+
+.card-center .low {
+    border-top: none;
+}
+
+.card .low li {
+    color: var(--gray-color);
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card-center {
+    bottom: 5px;
+    position: relative;
+}
+
+.card-center .special {
+    padding: 10px;
+    background-color: var(--pink-color);
+    font-size: var(--p-font-size);
+    font-weight: bold;
+    color: white;
+}
+/* end pricing style */
+
+/* start review style */
+
+.reviews, .contact {
+    width: 100%;
+    overflow: hidden;
+    padding: 5% 10%;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+}
+
+hr {
+    width: 5%;
+    border: 2px solid var(--pink-color);
+    margin: 20px 10px;
+    margin-left: calc(95% / 2);
+}
+
+
+.reviews .customers p {
+    color: gray;
+}
+
+div.cutomers {
+    overflow: hidden;
+}
+
+.reviews article {
+    float: left;
+    width: 30%;
+    position: relative;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.reviews article .person {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reviews article > p {
+    background-color: rgb(238, 235, 235);
+    padding: 10px;
+}
+
+.reviews article span {
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent;
+    border-top-color: rgb(238, 235, 235);
+    left: 100px;
+}
+
+.rev-imgs {
+    float: left;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.person p {
+    background-color: transparent;
+}
+
+.person .rev-txt {
+    padding: 10px;
+    font-size: 10px;
+}
+.person img {
+    width: 60px;
+}
+
+/* stylish style */
+.sty {
+    width: 100%; 
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    background-image: url("../images/sty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.sty hr {
+    border: 2px solid white;
+}
+
+.sty .s-overlay {
+    background-color:rgba(3, 3, 29, 0.467);
+    width: 100%;
+    padding: 5% 10%;
+}
+
+
+.sty button {
+    text-align: center;
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: white;
+    border: 2px white solid;
+    font-weight: bold;
+    background-color: transparent;
+}
+.sty button:hover {
+    background-color: white;
+    color: var(--dark-navy-color);
+}
+
+/* end stylish section */
+
+/* start style  */
+.contact .form-div {
+    overflow: hidden;
+    padding: 50px;
+    display: block;
+}
+.contact form {
+    background-color: aquamarine;
+    width: 50%;
+}
+.contact form input{
+    float: left;
+    padding: 20px;
+    font-size: var(--p-font-size);
+    background-color: white;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px lightgray solid;
+    margin: 5%;
+}
+form input:focus {
+    outline: 0;
+    border-bottom: 1px var(--pink-color) solid;
+}
+
+.contact textarea {
+    padding: 20px;
+    font-size: var(--p-font-size);
+    background-color: white;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px lightgray solid;
+
+}
+textarea:focus {
+    border-bottom: 1px var(--pink-color) solid;
+}
+.contact .f-right{
+    width: 30%;
+}
+.contact button {
+    padding: 12px 20px;
+    font-size: 12px;
+    background-color: var(--pink-color);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+.contact button:hover{
+    background-color: var(--dark-navy-color);
+}
+footer {
+    background-color: var(--dark-navy-color);
+    text-align: center;
+    padding: 20px;
+}
+footer .icons {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+footer .icons i{ 
+    font-size: 15px;
+    color: white;
+    padding: 0 5px;
+}
+footer .icons i:hover {
+    color: var(--pink-color);
+}
+
+footer p {
+    font-size: 12px;
+    color: var(--light-gray-color);
+    padding-top: 5px;
+}
+
+
